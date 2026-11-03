@@ -28,17 +28,39 @@
 | `scripts/gen_skeleton.py` | 可复用骨架：`text()` 自动断言不溢出、`parent_child_ok()` 断言包含关系、`dist()` 断言描边色距 |
 | `scripts/gen_all.py` | 四张示例图 + 三类断言的全流程演示 |
 
-## 用插件安装（一条命令，已实测）
+## 安装（三种方式，按推荐顺序）
+
+### 1. 一条命令装进所有 Agent（推荐，已实测）
+
+```bash
+npx skills add zhanguoliang715/diagram-layout-discipline
+```
+
+装好后会同时挂到 Codex、Cursor、Amp、Antigravity、Claude Code 等 20+ 个 Agent 上，不用逐个配。
+
+### 2. 作为 Claude Code 插件（已实测）
 
 ```bash
 claude plugin marketplace add zhanguoliang715/diagram-layout-discipline
 claude plugin install diagram-layout-discipline@diagram-layout-discipline
 ```
 
-> 本机 git 若报 `CRYPT_E_NO_REVOCATION_CHECK`（证书吊销列表查不到），命令前加 `GIT_SSL_NO_VERIFY=1`。
-> 这是本机 TLS 配置问题，与仓库无关；换台机器通常直接可用。
+### 3. 手动拷目录
 
-不想装插件也行，下面的手动方式是等价的。
+```bash
+git clone https://github.com/zhanguoliang715/diagram-layout-discipline.git
+```
+
+> **本机 git 报 `CRYPT_E_NO_REVOCATION_CHECK` 时**（证书吊销列表查不到），在命令前加 `GIT_SSL_NO_VERIFY=1`。
+> 这是本机 TLS 配置问题，与仓库无关，换台机器通常直接可用。
+
+## English
+
+Three hard rules for SVG diagrams: no text overflow, nested containers must stay distinguishable, and anything with order or branching must be drawn. Ships a text-width measurement script.
+
+```bash
+npx skills add zhanguoliang715/diagram-layout-discipline
+```
 
 ## 上手
 
