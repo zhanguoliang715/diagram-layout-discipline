@@ -1,5 +1,8 @@
 # diagram-layout-discipline
 
+<p align="right">[简体中文](README.md) | [English](README.en.md)</p>
+
+
 **画 SVG 图表的三条硬纪律：文字不许溢出边框、嵌套容器必须一眼能分清、能画的逻辑不许用文字描述。附一个量字宽的脚本，不用眼睛估。**
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB)
