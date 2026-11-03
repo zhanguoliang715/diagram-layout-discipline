@@ -1,0 +1,21 @@
+{
+  "name": "diagram-layout-discipline",
+  "owner": {
+    "name": "zhanguoliang715"
+  },
+  "metadata": {
+    "description": "SVG 图表排版纪律：文字不溢出、嵌套容器可区分、能画的逻辑不用文字描述",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "diagram-layout-discipline",
+      "description": "画 SVG 结构图的三条硬纪律，附文字宽度实测脚本与断言骨架",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}

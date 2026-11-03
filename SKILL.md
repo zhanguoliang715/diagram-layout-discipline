@@ -1,7 +1,7 @@
 ---
 name: diagram-layout-discipline
 description: 绘制 SVG 图表时的三条硬纪律——文字不得溢出边框、嵌套容器边框必须可区分、可运行的逻辑必须画成图不得用文字描述。附带一个文字宽度实测脚本。
-agent_created: true
+license: MIT
 ---
 
 # 图表布局纪律（SVG 图表）
